@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #101114;
+  color: #f5f5f5;
+}
+
+.container {
+  width: min(720px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(32px, 7vw, 52px);
+}
+
+.subtitle {
+  margin: 0;
+  color: #9ca3af;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #2c2f36;
+  border-radius: 14px;
+  background: #181a1f;
+}
+
+.account img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}
+
+.account strong {
+  display: block;
+}
+
+.account span {
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.people {
+  display: grid;
+  gap: 10px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid #2c2f36;
+  border-radius: 14px;
+  background: #181a1f;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #2a2d33;
+}
+
+.person-name {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.empty,
+.loading {
+  padding: 30px;
+  text-align: center;
+  color: #8f96a3;
+  border: 1px dashed #333740;
+  border-radius: 14px;
+}
+
+.actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.primary {
+  background: #4285f4;
+  color: white;
+}
+
+.primary:hover:not(:disabled) {
+  background: #357ae8;
+}
+
+.danger {
+  background: #b4232d;
+  color: white;
+}
+
+.secondary {
+  background: #2a2d33;
+  color: white;
+}
+
+.message {
+  min-height: 22px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.audio-note {
+  margin: 10px 0 0;
+  color: #6f7682;
+  font-size: 13px;
+}
+
+.person {
+  transition: transform .16s ease, border-color .16s ease, background .16s ease;
+}
+
+.person:hover {
+  transform: translateY(-2px);
+  border-color: #4285f4;
+  background: #1b1e24;
+}
+
+.person-info {
+  min-width: 0;
+}
+
+.person-hint {
+  margin-top: 4px;
+  color: #707784;
+  font-size: 12px;
+}

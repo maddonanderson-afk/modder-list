@@ -1,0 +1,12 @@
+name = "people-list"
+main = "src/worker.js"
+compatibility_date = "2026-09-14"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "d1data"
+database_id = "1f491d19-0ee2-43da-aab8-3d5cf447b63e"

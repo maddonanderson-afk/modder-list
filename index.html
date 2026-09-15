@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modder List</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Modder List</h1>
+      <p class="subtitle">Sign in with Google to add yourself.</p>
+      <p class="audio-note">Hover a modder to hear their profile music after your first click.</p>
+    </header>
+
+    <section id="account" class="account hidden"></section>
+
+    <section id="people" class="people" aria-live="polite">
+      <div class="loading">Loading...</div>
+    </section>
+
+    <div class="actions">
+      <button id="addButton" class="primary">ADD YOURSELF</button>
+      <button id="removeButton" class="danger hidden">REMOVE YOURSELF</button>
+      <button id="profileButton" class="secondary hidden">EDIT PROFILE</button>
+      <button id="logoutButton" class="secondary hidden">LOG OUT</button>
+    </div>
+
+    <p id="message" class="message" role="status"></p>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
